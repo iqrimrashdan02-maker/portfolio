@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqrim Rashdan | Software Development Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-gradient { background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%); }
+        /* Custom bullet style */
+        .skill-list li::before { content: "→"; color: #60a5fa; margin-right: 10px; font-weight: bold; }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-300">
+
+    <nav class="fixed w-full z-50 px-6 py-4 glass flex justify-between items-center">
+        <div class="text-white font-bold text-xl tracking-tighter">IQ-RASHDAN</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#about" class="hover:text-blue-400 transition">About</a>
+            <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+            <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+            <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Updated with Image) -->
+    <section class="min-h-screen flex items-center justify-center hero-gradient px-6 py-24 md:py-0">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-5 gap-12 items-center text-center md:text-left">
+            
+            <!-- Text Content (Occupies 3 columns on desktop) -->
+            <div class="md:col-span-3 order-2 md:order-1 flex flex-col items-center md:items-start">
+                <div class="mb-6 px-4 py-1 border border-blue-500/30 rounded-full text-blue-400 text-xs font-mono inline-block">
+                    Available for Internship
+                </div>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+                    Muhammad <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Iqrim Rashdan</span>
+                </h1>
+                <p class="text-lg text-slate-400 max-w-2xl leading-relaxed italic mb-10">
+                    "Computer Science student specializing in Software Development with a focus on web systems and machine learning solutions."
+                </p>
+                <div class="flex gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition">View My Work</a>
+                    <a href="mailto:iqrimrashdan02@gmail.com" class="px-8 py-3 glass text-white rounded-lg font-semibold hover:bg-white/5 transition">Get In Touch</a>
+                </div>
+            </div>
+
+            <!-- Image Content (Occupies 2 columns on desktop) -->
+            <div class="md:col-span-2 order-1 md:order-2 flex justify-center">
+                <div class="relative group">
+                    <!-- Decorative Gradient Ring behind image -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
+                    
+                    <!-- 
+                      INSTRUCTIONS:
+                      Replace 'https://via.placeholder.com/300' below with your actual image path.
+                      Example: 'images/profile.jpg' if you have a folder named images.
+                    -->
+                    <img 
+                        src="2.jpg" 
+                        alt="Muhammad Iqrim Rashdan" 
+                        class="relative rounded-full w-60 h-60 md:w-72 md:h-72 object-cover border-4 border-[#1e293b] shadow-2xl"
+                    >
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+        <div>
+            <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-blue-500 pl-4">About Me</h2>
+            <p class="mb-6 leading-relaxed">
+                Based in Port Dickson, I am a final-year Bachelor of Computer Science (Software Development) student at Universiti Sultan Zainal Abidin (UniSZA) with a current CGPA of 3.48.            </p>
+            <p class="leading-relaxed">
+                I have a strong passion for software development, web technologies, and solving real-world problems through technology. I am experienced in developing systems using Laravel, PHP, MySQL, 
+                and have knowledge in integrating Machine Learning algorithms such as Naive Bayes for data analysis and disease detection systems.            </p>
+            <br>
+            
+                <p class="leading-relaxed">In addition to technical skills, I also possess experience in system troubleshooting, computer maintenance, 
+                and teamwork gained through my industrial training at TNB Power Generation. I am a fast learner, adaptable, and always eager to expand my knowledge and experience in the software development field.</p>
+            </div>
+        <div>
+            <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-cyan-500 pl-4">Education</h2>
+            <div class="space-y-6">
+                <div class="glass p-5 rounded-xl">
+                    <h4 class="text-blue-400 font-bold">UniSZA</h4>
+                    <p class="text-white font-medium text-sm">Bachelor of Computer Science (Software Dev)</p>
+                    <p class="text-xs text-slate-400 italic">2023 - 2027 | CGPA: 3.48</p>
+                </div>
+                <div class="glass p-5 rounded-xl">
+                    <h4 class="text-cyan-400 font-bold">PSMZA</h4>
+                    <p class="text-white font-medium text-sm">Diploma in Information Technology</p>
+                    <p class="text-xs text-slate-400 italic">2020 - 2023 | CGPA: 3.60</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 bg-[#111827]">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Work Experience</h2>
+            <div class="relative border-l border-slate-700 ml-4 md:ml-0">
+                <div class="mb-10 ml-6">
+                    <span class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-600 rounded-full ring-8 ring-[#111827]"></span>
+                    <h3 class="text-xl font-bold text-white">Information Technology Trainer</h3>
+                    <p class="text-blue-400 text-sm mb-4">TNB Power Generation Sdn Bhd | Jan 2023 – June 2023</p>
+                    <ul class="grid md:grid-cols-2 gap-2 text-sm">
+                        <li>• Assisted IT department in daily technical operations</li>
+                        <li>• System maintenance and troubleshooting</li>
+                        <li>• CCTV and network infrastructure maintenance</li>
+                        <li>• Multimedia & Audio-visual management</li>
+                       <li>• Basic FiberOptic knowledge</li>
+                        <li>• Performed troubleshooting and repair for computers and laptops</li>
+                      <li>• Participated in maintenance of CCTV systems and network infrastructure</li>
+                      <li>• Structured and visualized departmental hierarchy to improve internal communication</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+                    <h2 class="text-3xl font-bold text-white mb-12 text-center">Featured Project</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass rounded-2xl overflow-hidden group hover:border-blue-500/50 transition">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-white mb-3">I-HADD System</h3>
+                    <p class="text-sm mb-6 text-slate-400 italic">Disease Prediction System</p>
+                    <p class="text-sm leading-relaxed mb-6">Symptom-based disease prediction system powered by the <b>Naive Bayes</b> Machine Learning algorithm. Designed to analyze patient symptoms and generate intelligent prediction results to support early health assessment and decision-making. The system features a fully integrated platform with dedicated interfaces for administrators, patients, and professional doctors, enabling efficient data management, patient monitoring, and medical report generation. Developed with a focus on usability, accuracy, and real-world healthcare application.
+</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-400 text-xs rounded-full">LARAVEL</span>
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-400 text-xs rounded-full">MySQL</span>
+                        <span class="px-3 py-1 bg-blue-900/30 text-blue-400 text-xs rounded-full">ML Naive Bayes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="glass rounded-2xl overflow-hidden group hover:border-cyan-500/50 transition">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-white mb-3">Easy to Reserve (E2R)</h3>
+                    <p class="text-sm mb-6 text-slate-400 italic">Hostel Booking System</p>
+                    <p class="text-sm leading-relaxed mb-6">Automated the traditional manual hostel reservation process to improve operational efficiency, reduce processing time, and enhance the overall booking experience for students. Developed with a user-friendly interface focused on seamless student data management, reservation tracking, and administrative handling. The system was designed to provide a more organized, efficient, and accessible accommodation management solution for both students and administrators.
+</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cyan-900/30 text-cyan-400 text-xs rounded-full">PHP</span>
+                        <span class="px-3 py-1 bg-cyan-900/30 text-cyan-400 text-xs rounded-full">Mysql</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#0f172a] px-6">
+        <div class="max-w-6xl mx-auto glass p-12 rounded-3xl grid md:grid-cols-3 gap-12">
+            <div>
+                <h4 class="text-white font-bold mb-6 text-lg uppercase tracking-widest border-b border-blue-500/30 pb-2">Technical Skills</h4>
+                <ul class="skill-list space-y-3 text-sm text-slate-300">
+                    <li>Java & PHP</li>
+                    <li>Laravel Framework</li>
+                    <li>CodeIgniter 4</li>
+                    <li>MySQL Database</li>
+                    <li>HTML5 & CSS3 (Tailwind)</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 text-lg uppercase tracking-widest border-b border-cyan-500/30 pb-2">Tools & Platforms</h4>
+                <ul class="skill-list space-y-3 text-sm text-slate-300">
+                    <li>GitHub (Version Control)</li>
+                    <li>VS Code</li>
+                    <li>XAMPP / Laragon</li>
+                    <li>OBS Studio</li>
+                    <li>CapCut (Video Editing)</li>
+                    <li>Canva</li>
+                    <li>Microsoft Office Suite</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 text-lg uppercase tracking-widest border-b border-purple-500/30 pb-2">Awards</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start">
+                        <span class="mr-3">🏆</span>
+                        <span>1st Runner Up - Petrosains RBTX Challenge 2018</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3">🥇</span>
+                        <span>Gold Award - EPIC 2018</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-12 border-t border-white/5 text-center">
+        <h2 class="text-xl font-bold text-white mb-4">Let's Connect</h2>
+        <p class="text-sm mb-6">iqrimrashdan02@gmail.com | +60 19-9887472</p>
+        <p class="text-xs text-slate-500 uppercase tracking-widest">© 2026 Muhammad Iqrim Rashdan</p>
+    </footer>
+
+</body>
+</html>
